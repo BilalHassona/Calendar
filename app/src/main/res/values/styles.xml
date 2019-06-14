@@ -1,0 +1,46 @@
+<resources>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">\
+        <item name="colorPrimary">@color/themeBar</item>
+        <item name="colorPrimaryDark">@color/themeBarDark</item>
+        <item name="colorAccent">@color/themeAccent</item>
+    </style>
+
+    <style name="AppTheme2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/toolbar</item>
+        <item name="colorPrimaryDark">@color/toolbar_current_day_text</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorPrimary">@color/toolbar_text</item>
+        <item name="actionMenuTextColor">@color/toolbar_text</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="colorControlActivated">@color/toolbar_current_day_text</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingHorizontal">0dp</item>
+        <item name="android:paddingVertical">0dp</item>
+    </style>
+
+
+</resources>
+    <!--Theme.AppCompat.Light.NoActionBar-->

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige_background_color">
+
+    <!--<CalendarView-->
+        <!--android:id="@+id/calendarView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:maxDate="@string/maxDate"-->
+        <!--android:minDate="@string/minDate"-->
+        <!--tools:layout_editor_absoluteX="6dp"-->
+        <!--tools:layout_editor_absoluteY="59dp" />-->
+
+        <!--app:eventTextColor="@android:color/white"-->
+        <!--app:textSize="12sp"-->
+        <!--app:hourHeight="60dp"-->
+        <!--app:headerColumnPadding="8dp"-->
+        <!--app:headerColumnTextColor="@color/toolbar_text"-->
+        <!--app:headerRowPadding="12dp"-->
+        <!--app:columnGap="8dp"-->
+        <!--app:noOfVisibleDays="3"-->
+        <!--app:headerRowBackgroundColor="@color/toolbar"-->
+        <!--app:dayBackgroundColor="#05000000"-->
+        <!--app:todayBackgroundColor="#1848ADFF"-->
+        <!--app:headerColumnBackground="#ffffffff"-->
+        <!--app:todayHeaderTextColor="@color/toolbar_current_day_text"/>-->
+
+    <Button
+        android:id="@+id/buttonAsynchronous"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/title_activity_asynchronous"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonBasic"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_activity_basic"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAsynchronous"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/buttonAddEventToCalendar"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_activity_add_event"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBasic"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/buttonCalendar"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/title_activity_calendar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddEventToCalendar"
+        tools:layout_editor_absoluteX="16dp" />
+
+</android.support.constraint.ConstraintLayout>
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="#fff"-->
+<!--android:orientation="vertical"-->
+<!--tools:context=".MainActivity">-->
+
+<!--<Button-->
+    <!--android:id="@+id/buttonBasic"-->
+    <!--style="@style/Button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/title_activity_basic" />-->
+
+<!--<Button-->
+    <!--android:id="@+id/buttonAsynchronous"-->
+    <!--style="@style/Button"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/title_activity_asynchronous" />-->
+
+<!--</LinearLayout>-->
+
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/main_coordinator"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context="com.example.calendarandroid.MainActivity">-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/main_recycler"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="?attr/actionBarSize" />-->
+
+    <!--<include layout="@layout/toolbar_w_shadow" />-->
+
+
+<!--</FrameLayout>-->

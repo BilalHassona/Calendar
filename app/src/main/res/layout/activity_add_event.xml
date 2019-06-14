@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.calendarandroid.AddEventActivity"
+    android:paddingVertical="@dimen/activity_vertical_margin"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/add_event_name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/add_event_description"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/localization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/add_event_localization"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/guests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/add_event_guests"
+            android:inputType="textPersonName" />
+
+        <!--<Switch-->
+            <!--android:id="@+id/whole_day"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/add_event_switch"-->
+            <!--android:textAppearance="@android:style/TextAppearance.Material"-->
+            <!--android:textSize="18sp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/btn_lasts_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_event_lasts_from"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <TextView
+                android:id="@+id/pick_starting_date_and_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/btn_lasts_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_event_lasts_to"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <TextView
+                android:id="@+id/pick_ending_date_and_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_event_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:tint="@color/fabColor"
+            app:backgroundTint="@color/fabBackgroundColor"
+            android:src="@drawable/ic_checked"
+            app:elevation="4dp" />
+
+        <!--android:clickable="true"-->
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/floatingActionButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:clickable="true"-->
+            <!--android:tint="@color/fabColor"-->
+            <!--app:backgroundTint="@color/fabBackgroundColor"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/buttonCalendar"-->
+            <!--app:srcCompat="@android:drawable/ic_input_add"-->
+            <!--tools:layout_editor_absoluteX="274dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/data_from_file"-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="300dp"-->
+            <!--android:layout_gravity="bottom" />-->
+
+    </LinearLayout>
+</ScrollView>
